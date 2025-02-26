@@ -16,8 +16,8 @@ import { start } from "qiankun";
 import { registerApps } from "@/qiankun/run";
 import { onMounted } from "vue";
 onMounted(() => {
-  if (!window.qiankunStarted) {
-    window.qiankunStarted = true;
+  if (!(window as any).qiankunStarted) {
+    (window as any).qiankunStarted = true;
     registerApps();
     start({
       sandbox: {

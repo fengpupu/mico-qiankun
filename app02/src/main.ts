@@ -3,11 +3,11 @@
  * @Author: fengpu 1126120965@qq.com
  * @Date: 2025-02-25 13:31:40
  * @LastEditors: fengpu 1126120965@qq.com
- * @LastEditTime: 2025-02-25 15:04:23
+ * @LastEditTime: 2025-02-26 15:09:57
  * @FilePath: \fengpu-mico\mico-qiankun\app02\src\main.ts
  * Endless Story. - NANA
  */
-import "./assets/main.css";
+// import "./assets/main.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";

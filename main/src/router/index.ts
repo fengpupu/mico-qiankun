@@ -1,3 +1,12 @@
+/*
+ * @Description:
+ * @Author: fengpu 1126120965@qq.com
+ * @Date: 2025-02-25 13:30:59
+ * @LastEditors: fengpu 1126120965@qq.com
+ * @LastEditTime: 2025-02-26 13:25:12
+ * @FilePath: \fengpu-mico\mico-qiankun\main\src\router\index.ts
+ * Endless Story. - NANA
+ */
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
@@ -27,6 +36,12 @@ const router = createRouter({
     {
       path: "/app/app02/",
       name: "app02",
+      meta: {},
+      component: () => import("@/views/SubContainer.vue"),
+    },
+    {
+      path: "/app/app-react/",
+      name: "app-react",
       meta: {},
       component: () => import("@/views/SubContainer.vue"),
     },

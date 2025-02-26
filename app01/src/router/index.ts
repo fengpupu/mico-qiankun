@@ -12,7 +12,7 @@ import HomeView from "../views/HomeView.vue";
 
 const router = createRouter({
   history: createWebHistory(
-    window.qiankunWindow?.__POWERED_BY_QIANKUN__ ? "/app/app01/" : "/"
+    (window as any).qiankunWindow?.__POWERED_BY_QIANKUN__ ? "/app/app01/" : "/"
   ),
   routes: [
     {

@@ -3,7 +3,7 @@
  * @Author: fengpu 1126120965@qq.com
  * @Date: 2025-02-25 13:31:23
  * @LastEditors: fengpu 1126120965@qq.com
- * @LastEditTime: 2025-02-25 14:52:17
+ * @LastEditTime: 2025-02-26 16:52:30
  * @FilePath: \fengpu-mico\mico-qiankun\app01\vite.config.ts
  * Endless Story. - NANA
  */
@@ -34,5 +34,8 @@ export default defineConfig({
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
+  },
+  preview: {
+    port: 7001,
   },
 });
