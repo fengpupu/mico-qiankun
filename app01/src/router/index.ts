@@ -3,7 +3,7 @@
  * @Author: fengpu 1126120965@qq.com
  * @Date: 2025-02-25 13:31:23
  * @LastEditors: fengpu 1126120965@qq.com
- * @LastEditTime: 2025-02-25 14:49:41
+ * @LastEditTime: 2025-02-28 15:59:22
  * @FilePath: \fengpu-mico\mico-qiankun\app01\src\router\index.ts
  * Endless Story. - NANA
  */
@@ -19,15 +19,7 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
-    },
-    {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
-    },
+    }
   ],
 });
 

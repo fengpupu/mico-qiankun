@@ -15,8 +15,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-r": "set PORT=7003 & rescripts start",
-    "build": "react-scripts build",
+    "dev": "set PORT=7003 & rescripts start",
+    "build-o": "react-scripts build",
+    "build": "rescripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

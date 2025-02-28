@@ -28,7 +28,10 @@ export default {
     },
     {
       name: "app-react",
-      entry: "//localhost:7003",
+      entry:
+        process.env.NODE_ENV === "development"
+          ? "//localhost:7003"
+          : "/app-react/index.html", // 子应用入口，本地环境下指定端口
       container: "#sub-container",
       activeRule: "/app/app-react",
       props: {}, // 主应用与子应用通信传值

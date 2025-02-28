@@ -3,7 +3,7 @@
  * @Author: fengpu 1126120965@qq.com
  * @Date: 2025-02-25 13:31:23
  * @LastEditors: fengpu 1126120965@qq.com
- * @LastEditTime: 2025-02-26 16:52:30
+ * @LastEditTime: 2025-02-26 17:24:37
  * @FilePath: \fengpu-mico\mico-qiankun\app01\vite.config.ts
  * Endless Story. - NANA
  */
@@ -17,6 +17,7 @@ import qiankun from "vite-plugin-qiankun";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === "production" ? "/app01/" : "/",
   plugins: [
     vue(),
     vueJsx(),
@@ -37,5 +38,8 @@ export default defineConfig({
   },
   preview: {
     port: 7001,
+  },
+  build: {
+    outDir: "app01",
   },
 });

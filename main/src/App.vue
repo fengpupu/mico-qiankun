@@ -3,7 +3,7 @@
  * @Author: fengpu 1126120965@qq.com
  * @Date: 2025-02-25 13:30:59
  * @LastEditors: fengpu 1126120965@qq.com
- * @LastEditTime: 2025-02-26 13:24:41
+ * @LastEditTime: 2025-02-27 14:51:19
  * @FilePath: \fengpu-mico\mico-qiankun\main\src\App.vue
  * Endless Story. - NANA
 -->
@@ -12,16 +12,22 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <div style="display: flex; flex-direction: column; height: 100%; width: 100%">
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+    "
+  >
     <header>
       <nav>
         <router-link to="/app/app01">app01</router-link>
         <router-link to="/app/app02/#/">app02</router-link>
         <router-link to="/app/app-react">app-react</router-link>
       </nav>
-      <!-- </div> -->
     </header>
-
     <RouterView style="flex: 1" />
   </div>
 </template>
@@ -32,6 +38,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  padding: 20px 20px;
 }
 
 nav a.router-link-exact-active {

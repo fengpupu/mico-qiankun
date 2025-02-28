@@ -1,3 +1,12 @@
+<!--
+ * @Description: 
+ * @Author: fengpu 1126120965@qq.com
+ * @Date: 2025-02-25 13:31:23
+ * @LastEditors: fengpu 1126120965@qq.com
+ * @LastEditTime: 2025-02-27 14:52:40
+ * @FilePath: \fengpu-mico\mico-qiankun\app01\src\App.vue
+ * Endless Story. - NANA
+-->
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
@@ -18,7 +27,14 @@ import HelloWorld from "./components/HelloWorld.vue";
   </header>
 
   <RouterView /> -->
-  this is app01
+  <img
+    alt="Vue logo"
+    class="logo"
+    src="@/assets/logo.svg"
+    width="125"
+    height="125"
+  />
+  Vue3 - Vite - History模式
 </template>
 
 <style scoped>
